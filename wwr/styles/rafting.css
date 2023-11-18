@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #3083DC;
+    --secondary-color: #03045E;
+    --secondary2-color: #BFFAFF;
+    --secondary2-color-rgb: 191, 250, 255;
+    --accent1-color: #FCCA46;
+    --accent2-color: #FF1D15;
+
+    --heading-font: "Bebas Neue",sans-serif;
+    --paragraph-font: "Montserrat", "Arial", sans-serif;
+
+    --nav-background-color: #03045E;
+    --nav-link-color: #FCCA46;
+    --nav-hover-link-color: #FF1D15;
+    --nav-hover-background-color: #03045E;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--secondary2-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+    color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+}
+
+.hero article {
+    max-width: 90%;
+    position: absolute;
+    top: 340px; left: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(var(--secondary2-color-rgb), 0.4);
+}
+
+.hero article img {
+    max-width: 20%;
+    float: right;
+}
+
+.hero article p {
+    padding: 0px;
+}
+
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: .5rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 0px; left: 20px;
+    color: var(--accent1-color);
+}
+
+
+.icon {
+    max-width: 50px;
+}
