@@ -73,9 +73,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-h2 {
-    font-size: xx-large;
-}
 
 footer p {
     padding: 25px;
@@ -200,7 +197,7 @@ figure img {
     text-align: center;
 }
 
-.team h2, .contact h2, form h2 {
+.team h2, .contact h1, form h2 {
     padding-top: 1em;
     text-align: center;
     flex: 1;
