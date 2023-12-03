@@ -73,7 +73,11 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-p {
+h2 {
+    font-size: xx-large;
+}
+
+footer p {
     padding: 25px;
     color: var(--primary-color);
 }
@@ -181,4 +185,108 @@ figure img {
 
 .icon {
     max-width: 50px;
+}
+
+/* following css code is for contact file */
+
+.contact {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, auto));
+}
+
+.contact-info, .map {
+    padding: 1em;
+    text-align: center;
+}
+
+.team h2, .contact h2, form h2 {
+    padding-top: 1em;
+    text-align: center;
+    flex: 1;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    display: grid;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    border: none;
+    padding: 1rem;
+}
+
+label {
+    text-align: left;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.radio-buttons {
+    padding-top: .5rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.checkbox label {
+    margin-left: 1em;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    order: -1;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--nav-background-color);
+    color: var(--secondary2-color);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+}
+
+.portraits {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.portrait {
+    width: 150px;
+    height: 200px;
+    display: block;
+    flex: 150px;
+}
+
+figcaption {
+    padding-top: 0.5em;
 }

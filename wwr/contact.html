@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Us | Beehive Rafting Co. | WDD 130</title>
+      <meta name="description" content="Contact us page for Beehive Rafting Co.">
+      <meta name="author" content="Nadine Lugo Salas">
+      <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+    <body class="page">
+      <header class="page">
+        <img src="images/logo.png" alt="Rafting Site Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+          </nav>
+      </header>
+      <main>
+        <section class="contact">
+            <div>
+            <h2>Contact Us</h2>
+            <p class="contact-info">3702 E Provo Canyon Rd<br>
+            Provo, UT 84604<br>
+            Call: 801-224-2500<br>
+            Text: 801-822-2226<br>
+            info@beehiverafting.com
+            </p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194588.6257136578!2d-111.70420420876772!3d40.354605743611906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d8e7642eb4b43%3A0x5dfdf778ea370abd!2s3702%20E%20Provo%20Canyon%20Rd%2C%20Provo%2C%20UT%2084604!5e0!3m2!1sen!2sus!4v1701574728761!5m2!1sen!2sus" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <form>
+            <h2>Send us a Message!</h2>
+            <fieldset>
+                <div class="form-item">
+                    <label for="username">Name:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-item">
+                    <label for="useremail">Email Address:</label>
+                    <input type="text" id="useremail" name="useremail">
+                </div>
+                <div class="form-item">
+                    <p>Purpose of message:</p>
+                    <div class="radio-buttons">
+                        <input type="radio" id="general" name="purpose" value="general">
+                        <label for="general">General Inquiry</label><br>
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="reservation">Reservation Question</label><br>
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        <label for="suggestion">Website Suggestion</label><br>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="form-item checkbox">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter.</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+            </fieldset>
+            <button type="submit">Send</button>
+        </form>
+        <section class="team">
+            <h2>Our Team</h2>
+            <div class="portraits">
+                <figure><img class="portrait" src="images/nsalas.jpg" alt="owner Nadine Lugo Salas"><figcaption>Nadine Lugo Salas<br>Owner/CEO</figcaption></figure>
+                <figure><img class="portrait" src="images/mscott.jpg" alt="operations Michael Scott"><figcaption>Michael Scott<br>Operations</figcaption></figure>
+                <figure><img class="portrait" src="images/phalpert.jpg" alt="customer service Pam Halpert"><figcaption>Pam Halpert<br>Customer Service</figcaption></figure>
+                <figure><img class="portrait" src="images/dschrute.jpg" alt="safety & security Dwight Schrute"><figcaption>Dwight Schrute<br>Safety & Security</figcaption></figure>
+                <figure><img class="portrait" src="images/kmalone.jpg" alt="accounting Kevin Malone"><figcaption>Kevin Malone<br>Accounting</figcaption></figure>
+            </div>            
+        </section>
+      </main>
+      <footer>
+        <p>&copy;2023 | Beehive Rafting Co. | Nadine Lugo Salas</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook" class="icon"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter" class="icon"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram" class="icon"></a>
+        </nav>
+      </footer>
+    </body>
+    <!-- Last updated: 2 Dec 2023 -->
+</html>
