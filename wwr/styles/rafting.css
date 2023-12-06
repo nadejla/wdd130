@@ -54,11 +54,11 @@ header nav a {
     color: var(--nav-link-color);
 }
 
-header nav a:link, header nav a:visited {
+header nav a:link, header nav a:visited, .flink:link {
     color: var(--nav-link-color)
 }
 
-header nav a:hover {
+header nav a:hover, .flink:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
