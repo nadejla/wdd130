@@ -54,7 +54,7 @@ header nav a {
     color: var(--nav-link-color);
 }
 
-header nav a:link, header nav a:visited, .flink:link {
+header nav a:link, header nav a:visited, .flink:link, .flink:visited {
     color: var(--nav-link-color)
 }
 
@@ -70,13 +70,17 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: xx-large;
 }
-
 
 footer p {
     padding: 25px;
-    color: var(--primary-color);
+    color: var(--secondary2-color);
+}
+
+.flink {
+    text-decoration: none;
 }
 
 footer {
@@ -197,7 +201,7 @@ figure img {
     text-align: center;
 }
 
-.team h2, .contact h1, form h2 {
+.team h2, .contact h1, form h2, .trips-sec h2, .homepics h2 {
     padding-top: 1em;
     text-align: center;
     flex: 1;
@@ -252,7 +256,7 @@ input[type="checkbox"] {
     order: -1;
 }
 
-button {
+button, .action a {
     margin: 1rem;
     background-color: var(--nav-background-color);
     color: var(--secondary2-color);
@@ -262,7 +266,7 @@ button {
     font-size: 1.2rem;
 }
 
-button:hover {
+button:hover, .action a:hover {
     background-color: var(--accent1-color);
     color: var(--secondary-color);
 }
@@ -286,4 +290,134 @@ button:hover {
 
 figcaption {
     padding-top: 0.5em;
+}
+
+/* following css code is for trips page */
+
+.action {
+    padding-top: 1em;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.action p, .action a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.trips {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.trip {
+    width: 275px;
+    height: auto;
+    display: block;
+}
+
+table {
+    margin: 1em;
+    border-radius: .5rem;
+    border: 3px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+table caption {
+    font-size: x-large;
+}
+
+td {
+    white-space: nowrap;
+    padding: .2rem; 
+    vertical-align: top;
+    text-align: center;
+    background-color: var(--secondary2-color);
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: var(--secondary2-color);
+    padding: .5rem;
+}
+
+.description {
+    white-space: normal;
+    text-align: left;
+}
+
+/* The following code is for the home page */
+
+.homehero {
+    position: relative;
+}
+
+.homehero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.homehero article {
+    max-width: 90%;
+    position: absolute;
+    top: 370px; left: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(var(--secondary2-color-rgb), 0.4);
+}
+
+.homehero article h2 {
+    padding: 0px;
+    color: var(--secondary-color);
+    font-size: 4em;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.homediv {
+    width: fit-content;
+    align-self: end;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.newsletter {
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    display: grid;
+}
+
+.homepics {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.sitepics {
+    padding-top: 3em;
+    padding-bottom: 5em;
+    color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.sitepic {
+    width: 250px;
+    display: block;
+    flex: 150px;
 }
